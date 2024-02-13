@@ -10,6 +10,13 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  { path: 'formulario',
+  loadChildren: () => import('./pages/formulario/formulario.module').then( m => m.FormularioPageModule)
+  },
+  {
+    path: 'listado',
+    loadChildren: () => import('./pages/listado/listado.module').then( m => m.ListadoPageModule)
   }
 ];
 
